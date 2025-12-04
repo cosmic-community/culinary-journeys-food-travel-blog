@@ -24,7 +24,7 @@ export default function PostCard({ post }: PostCardProps) {
         <div className="p-6">
           {post.metadata?.categories && post.metadata.categories.length > 0 && (
             <span className="inline-block bg-primary text-white px-3 py-1 rounded-full text-xs font-medium mb-3">
-              {post.metadata.categories[0].title}
+              {post.metadata.categories[0]?.title}
             </span>
           )}
           

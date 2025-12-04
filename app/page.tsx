@@ -44,7 +44,7 @@ export default async function HomePage() {
               <div className="mb-4">
                 {featuredPost.metadata?.categories && featuredPost.metadata.categories.length > 0 && (
                   <span className="inline-block bg-primary text-white px-4 py-1 rounded-full text-sm font-medium">
-                    {featuredPost.metadata.categories[0].title}
+                    {featuredPost.metadata.categories[0]?.title}
                   </span>
                 )}
               </div>
